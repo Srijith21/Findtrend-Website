@@ -333,6 +333,9 @@ nav ul li a.button{
     position:relative;
     margin-bottom: 50px;
 }
+.price-period h3{
+    color: #ababaa;
+}
 .slide{
     background: #fff;
     height: 58px;
