@@ -124,6 +124,10 @@ nav ul li a.button{
 .tab-wrapper{
     position: relative;
 }
+.tab-wrapper:hover .tab{
+    transform:translateY(100%);
+    animation-play-state: paused;
+}
 .tab{
     background-color: #181818;
     display: flex;
@@ -139,13 +143,36 @@ nav ul li a.button{
     top: 100px;
     transform: rotate(-10deg);
     background-color: #181818;
+    
+    animation:  tab 2s ease-in forwards infinite alternate;
+}
+@keyframes tab{
+    0% {
+        transform:translateY(20%)
+    }
+    50% {
+        transform:translateY(10%)
+    }
+    100% {
+        transform:translateY(40%)
+    }
+}
+@keyframes tab-a{
+    0% {
+        transform:translateY(20%)
+    
+    }
+    100% {
+        transform:translateY(40%)
+    }
 }
 .tab.pinterest{
     position: absolute;
-    left: 450px;
-    top: 100px;
+    left: 480px;
+    top: 150px;
     transform: rotate(0.5deg);
     background-color: #181818;
+    transition: transform cubic-bezier(0, 0.79, 1, 0.17) 1s;
 }
 .tab.facebook{
     position: absolute;
@@ -153,6 +180,9 @@ nav ul li a.button{
     top: 60px;
     transform: rotate(3deg);
     background-color: #181818;
+    animation:  tab-a 2s ease-in forwards infinite alternate-reverse ;
+    transition: transform cubic-bezier(0, 0.99, 1, 0.17) 1.5s;
+
 }
 .tab.dribble{
     position: absolute;
@@ -160,6 +190,7 @@ nav ul li a.button{
     top: 100px;
     transform: rotate(3deg);
     background-color: #181818;
+    transition: transform cubic-bezier(0, 0.99, 1, 0.17) 1.5s;
 }
 .tab img{
     width: 11px;
@@ -413,6 +444,7 @@ nav ul li a.button{
     width: 15px;
     height: 15px;
     margin-left: 10px;
+    /* background: transparent; */
 }
 .price-features span p{
     margin-left: 10px;
