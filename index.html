@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-
+    <script src="https://kit.fontawesome.com/fa721e50a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
-            <nav>
+            <nav class="top-nav">
                 <div class="logo">
                     <img src="./Assets/icon.png" alt="logo" class="logo">
                     <h4>Findtrend</h4>
@@ -24,8 +24,8 @@
                     <li><a href="#">Features</a></li>
                 </ul>
                 <div>
-                    <ul> 
-                        <li><a href="#header">Login</a></li>
+                    <ul class="login"> 
+                        <li><a href="">Login</a></li>
                         <li><a class="button" href="#">Register</a></li>
                     </ul>
                 </div>
@@ -42,11 +42,6 @@
                     <p>cryptopunk <span>search</span> </p>
                     <img src="./Assets/cross.svg" alt="">
                 </div>
-                <div class="tab pinterest">
-                    <img src="./Assets/pintrest.svg" alt="" class="social">
-                    <p>popular <span>design</span></p>
-                    <img src="./Assets/cross.svg" alt="">
-                </div>
                 <div class="tab facebook">
                     <img src="./Assets/facebook.svg" alt="" class="social">
                     <p>product <span>design</span></p>
@@ -55,6 +50,11 @@
                 <div class="tab dribble">
                     <img src="./Assets/dribble.svg" alt="" class="social">
                     <p>Elon Musk -<span>search</span></p>
+                    <img src="./Assets/cross.svg" alt="">
+                </div>
+                <div class="tab pinterest">
+                    <img src="./Assets/pintrest.svg" alt="" class="social">
+                    <p>popular <span>design</span></p>
                     <img src="./Assets/cross.svg" alt="">
                 </div>
             </div>
@@ -84,7 +84,7 @@
     </div>
 <!-- ...........................................highlight................ -->
     <div id="highlight">
-        <div class="container">
+        <div class="highlight-container">
             <h1>Findtrend helps you to increase your productivity and reduce your computer's memory load,
                 <span>an application that can fulfillyour daily browsing needs.</span>
             </h1>
@@ -200,7 +200,9 @@
                     <img src="./Assets/linkedin -page1.jpg" alt="">
                 </div>
             </div>
-            <a href="" class="button">Register</a>
+            <div class="register-button">
+                <a href="" class="button">Register</a>
+            </div>
         </div>
     </div>
     <!-- ...................................price............ -->
@@ -215,7 +217,7 @@
                     <div class="slide-button"></div>
                 </div>
                 <h3>Yearly</h3>
-                <img class="arrow-img" src="./Assets/arrowithtext.svg" alt="">
+                <!-- <img class="arrow-img" src="./Assets/arrowithtext.svg" alt=""> -->
             </div>
             <div class="sec-bottom-plans">
                 <ul>
@@ -321,21 +323,21 @@
             </div>
         </div>
     </div>
-    <!-- ...................................bottom,,,,,,,,,,,, -->
+    <!-- ...................................footer,,,,,,,,,,,, -->
     <div id="footer">
         <div class="container">
-            <nav class="footer">
-                <div class="logo footer">
-                    <img src="./Assets/icon.png" alt="logo" class="logo">
-                    <h4>Findtrend</h4>
+            <div class="footer-sec">
+                <div class="logo-footer">
+                    <img src="./Assets/logo.png" alt="logo" class="logo">
+                    <!-- <h4>Findtrend</h4> -->
                 </div>
-                <ul> 
+                <ul class="bottom-footer"> 
                     <li><a href="#">How it works</a></li>
                     <li><a href="#">pricing</a></li>
                     <li><a href="#">Solution</a></li>
                     <li><a href="#">Features</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </div>
 </body>
