@@ -16,19 +16,20 @@
                     <img src="./Assets/icon.png" alt="logo" class="logo">
                     <h4>Findtrend</h4>
                 </div>
-                <ul> 
-                    <li><a href="">About</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">pricing</a></li>
-                    <li><a href="#">Solution</a></li>
-                    <li><a href="#">Features</a></li>
+                <ul id="sidemenu"> 
+                    <li><a href="#header">About</a></li>
+                    <li><a href="#bg-green">How it works</a></li>
+                    <li><a href="#pricing">pricing</a></li>
+                    <li><a href="#highlight">Features</a></li>
+                    <li><a href="#join">Solution</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
-                <div>
-                    <ul class="login"> 
-                        <li><a href="">Login</a></li>
-                        <li><a class="button" href="#">Register</a></li>
-                    </ul>
+                <div class="login"> 
+                        <div><a class="login-button" href="">Login</a></div>
+                        <div><a class="button" href="#">Register</a></div>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </div>
+                
             </nav>
             <div class="header-text">
                 <h1>Minimize your tabs. Find the trends!</h1>
@@ -328,17 +329,19 @@
         <div class="container">
             <div class="footer-sec">
                 <div class="logo-footer">
-                    <img src="./Assets/logo.png" alt="logo" class="logo">
+                    <a href="#header"><img src="./Assets/logo.png" alt="logo" class="logo"></a>
+                    
                     <!-- <h4>Findtrend</h4> -->
                 </div>
-                <ul class="bottom-footer"> 
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">pricing</a></li>
-                    <li><a href="#">Solution</a></li>
-                    <li><a href="#">Features</a></li>
+                <ul class="bottom-footer">
+                    <li><a href="#bg-green">How it works</a></li>
+                    <li><a href="#pricing">pricing</a></li>
+                    <li><a href="#highlight">Features</a></li>
+                    <li><a href="#join">Solution</a></li>
                 </ul>
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>

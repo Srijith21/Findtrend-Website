@@ -85,16 +85,22 @@ nav.top-nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-nav ul li a.button{
+div.login{
+    display: flex;
+    justify-content: space-between;
+}
+div.login a.button{
     background-color: #fff;
     padding: 10px 40px;
     color: #080808;
     border-radius: 20px;
 }
-.login ul{
-    display: flex;
-    justify-content: space-between;
+div.login a.login-button {
+    padding: 10px 40px;
+    color: #fff;
+    font-weight: 600;
 }
+
 .header-text{
     position: relative;
     max-width: 666px;
@@ -593,11 +599,22 @@ ul.bottom-footer li a{
     font-weight: 600;
 }
 /* ............................................small-screen-stylings 600px......... */
+nav.top-nav .fa-solid{
+    display: none;
+    margin:0 20px;
+}
+
+
 @media only screen and (max-width: 600px){
-    nav.top-nav{
+    nav.top-nav .fa-solid{
         display: block;
+        font-size: 25px;
+    }
+    nav.top-nav{
+        display: flex;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: space-between;
     }
     nav.top-nav ul{
         position: fixed;
@@ -609,11 +626,22 @@ ul.bottom-footer li a{
         background-color: #A6FF34;
         z-index: 2;
         transition: right 0.5s;
+        padding: 100px 0;
+    }
+    nav.top-nav .fa-solid.fa-circle-xmark{
+        position: absolute;
+        top: 25px;
+        left: 5px;
     }
     nav.top-nav ul li{
-        display:block;
+        display:inline-block;
+        list-style: none;
         color: #000;
-        margin-bottom: 20px;
+        margin: 30px 20px;
+    }
+    nav.top-nav ul li a{
+        color: #fff;
+        font-size: 18px;
     }
     .logo{
         display: flex;
@@ -923,13 +951,13 @@ ul.bottom-footer li a{
 /* ............................................small-screen-stylings 400px......... */
 @media only screen and (max-width: 400px){
     nav.top-nav{
-        display: none;
+        display: flex;
         flex-wrap: wrap;
         align-items: center;
     }
     nav.top-nav ul{
         position: fixed;
-        right:-100px;
+        right:-200px;
         top: 0;
         padding-top: 50px;
         height: 100vh;
@@ -943,11 +971,33 @@ ul.bottom-footer li a{
         color: #000;
         margin-bottom: 20px;
     }
+    div.login{
+        display: flex;
+        justify-content: space-between;
+    }
+    div.login a.button{
+        background-color: #fff;
+        padding: 5px 20px;
+        color: #080808;
+        border-radius: 20px;
+        margin: 0 10px;
+    }
+    div.login a.login-button {
+        padding: 5px 20px;
+        color: #fff;
+        font-weight: 300;
+        margin: 0 10px;
+
+    }
+
+
+
+
     .logo{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 30%;
+        width: auto;
         margin: auto;
         text-align: center;
     }
